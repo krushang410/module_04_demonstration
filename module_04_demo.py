@@ -8,6 +8,7 @@ Edited by: {Student Name}
 Date: oct 12th 2023
 Usage: 
 """
+
 #raise Exception("An eroor has occured")
 """""
 try:
@@ -45,7 +46,6 @@ finally:
     if file is not None:
         file.close()
         print("File closed.")
-"""
 
 numeric_list = [1, 2, 3, 'four', 5, 6, 7, 'eight', 10, 11, 'twelve']
 valid_list = []
@@ -57,4 +57,33 @@ for number in numeric_list:
         print(valid_list)
 
 # continue with program using valid_list
+"""""
 
+import logging
+
+logging.debug('Debug level message.')
+logging.info('Info level message')
+logging.warning('Warning level message')
+logging.error('Error level message')
+logging.critical('Critical level message')
+
+logging.basicConfig(level=logging.DEBUG,
+                    filename='app.log', 
+                    filemode='w', 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.debug('This debug message will get logged to a file')
+
+
+numerator = 5
+denominator = 0
+
+logger = logging.getLogger()
+try:
+    quotient = numerator / denominator
+except Exception:
+    logging.exception("An exception has occurred: ")        
+logger.error("An error has occured")
+
+
+logger.error("An error has occured")
