@@ -1,0 +1,9 @@
+2023-10-13 12:21:04,627 - DEBUG - This debug message will get logged to a file
+2023-10-13 12:21:04,631 - ERROR - An exception has occurred: 
+Traceback (most recent call last):
+  File "c:\Users\Asus\OneDrive - Red River College Polytech\Desktop\rrc_polytech\rrc_polytech\cources\software_development_fundmentals\demonstation\module_4_demonstration\module_04_demo.py", line 79, in <module>
+    quotient = numerator / denominator
+               ~~~~~~~~~~^~~~~~~~~~~~~
+ZeroDivisionError: division by zero
+2023-10-13 12:21:04,635 - ERROR - An error has occured
+2023-10-13 12:21:04,635 - ERROR - An error has occured

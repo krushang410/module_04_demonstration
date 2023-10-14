@@ -60,12 +60,14 @@ for number in numeric_list:
 """""
 
 import logging
+"""""
 
 logging.debug('Debug level message.')
 logging.info('Info level message')
 logging.warning('Warning level message')
 logging.error('Error level message')
 logging.critical('Critical level message')
+"""
 
 logging.basicConfig(level=logging.DEBUG,
                     filename='app.log', 

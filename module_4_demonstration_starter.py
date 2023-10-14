@@ -16,7 +16,7 @@ RECOMMENDED_INCREASE = 0.20
 
 
 #LECTURE SECTION 1
-file = open('module_4_dat.txt')
+file = open('module_4_data.txt')
 data = file.readlines()
 
 file.close()
